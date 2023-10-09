@@ -18,7 +18,7 @@ def recordAudioAsString():
 
     try:
         data = r.recognize_google(audio)
-        print("you said:" +data)
+        print("you said:" + data)
     except sr.UnknownValueError:
         print("We can not understend the audio,unknown error")
     except sr.RequestError as e:
